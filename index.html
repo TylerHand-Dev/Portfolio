@@ -4,21 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tyler Hand</title>
     <link rel="stylesheet" href="style.css">
-    <script src="javascript.js"></script>
 </head>
 
 <body>
     <header>
-        <br>
+        <div id="gradient" />
+        <div class="header">
+            <h1 class="bob-on-hover">Hi, I'm Tyler Hand</h1>
+            <div class="icons social">
+                <a href="https://www.facebook.com/TylerGHand" target="_blank"><img class="facebook" src="img/facebook.png" alt="Facebook Logo"></a>
+                <a href="https://www.instagram.com/thand_b.bs/" target="_blank"><img class="instagram" src="img/instagram.png" alt="Instagram Logo"></a>
+                <a href="https://github.com/TylerHand-Dev" target="_blank"><image class="github" src="img/github.png" alt="github"></image></a>
+                <a href="https://twitter.com/TylerGHand" target="_blank"><img class="twitter" src="img/twitter.png" alt="Twitter Logo"></a>
+                <a href="https://www.youtube.com/channel/UC_cKXkzrhoJtOKwqhvB2FSw" target="_blank"><img class="youtube" src="img/youtube.png" alt="Youtube Logo"></a>
+            </div>
+        </div>
     </header>
     
-    <section>
+    <section id="portfolio">
         <div class="portfolio">
-            
+            <h1>Here is some of my work</h1>
+            <div class="portfolio-images">
+                <img src="img/Pepsi.png">
+                <img src="img/Screen Shot 2022-10-03 at 7.01.23 PM.png">
+                <img src="img/TimWhiteBlog.png">
+                <img src="img/Friendship Baptist.png">
+                <img src="img/Starbucks.png">
+            </div>
         </div>
     </section>
+
+    <section id="about">
+        <h1>A little about me</h1>
+        <div class="about">
+            <div class="about-left">
+                <img src="img/Me.jpg">
+            </div>
+            <div class="about-right">
+                <p>I'm a web developer from Birmingham, Alabama. I owned my own web development agency (Hand's Web Development) for many years but since then I am working as a full time freelancer. Shoot me a message to get in touch!</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="emailBox">
+          <p id="CM">Send me a message</p>
+          <form action="https://formsubmit.co/tylerhand.dev@gmail.com" target="_blank" method="POST">
+            <div clas="inputs">
+              <input className="form" type="hidden" name="_subject" value="E-mail from greazey.tk" />
+              <p id='name'>Name</p>
+              <input type="text" name="name" placeholder="Enter Name" required />
+              <p id='emailip'>E-mail</p>
+              <input type="email" name="email" placeholder="Enter E-mail" required />
+              <p id='message'>Message</p>
+              <textarea type="text" name="message" placeholder="Write your message"></textarea>
+              <input id="send" type="submit" value="Send" />
+            </div>
+          </form>
+        </div>
+      </section>
+
+    <script src="javascript.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
 </body>
     
 </html>
